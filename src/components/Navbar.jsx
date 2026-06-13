@@ -7,7 +7,6 @@ const navItems = [
   { path: '/introduction', label: '介绍' },
   { path: '/tutorial', label: '教程' },
   { path: '/api', label: 'API 文档' },
-  { path: '/github', label: 'GitHub' },
 ]
 
 export default function Navbar() {

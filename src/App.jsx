@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage'
 import IntroductionPage from './pages/IntroductionPage'
 import TutorialPage from './pages/TutorialPage'
 import ApiPage from './pages/ApiPage'
-import GithubPage from './pages/GithubPage'
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
             <Route path="/introduction" element={<IntroductionPage />} />
             <Route path="/tutorial" element={<TutorialPage />} />
             <Route path="/api" element={<ApiPage />} />
-            <Route path="/github" element={<GithubPage />} />
           </Routes>
         </main>
         <Footer />

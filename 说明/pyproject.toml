@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pancake_framework"
+version = "0.2.5"
+description = "Pancake - Decorator-driven Python web framework with IoC, MyBatis ORM, and AI workflow"
+authors = ["drayee <1473443474@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pancake"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.33.1"
+python-dotenv = "^1.2.2"
+pyyaml = "^6.0.3"
+
+[tool.poetry.scripts]
+pancake = "pancake.cli:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.25.0"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
