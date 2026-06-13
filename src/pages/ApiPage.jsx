@@ -1,12 +1,20 @@
 import { useState } from 'react'
-import { Search, Tag, Database, Brain, ChevronDown, ChevronUp } from 'lucide-react'
+import { Tag, Database, Brain, Globe, Server, Shield, MessageSquare, Link as LinkIcon, Clock, Puzzle, Settings, Search, ChevronDown, ChevronUp } from 'lucide-react'
 import { apiReference } from '../data/apiReference'
 import CodeBlock from '../components/CodeBlock'
 
 const categories = [
   { id: 'decorators', label: '装饰器', icon: Tag },
   { id: 'orm', label: 'ORM', icon: Database },
+  { id: 'web', label: 'Web 模块', icon: Globe },
   { id: 'ai', label: 'AI 模块', icon: Brain },
+  { id: 'redis', label: 'Redis', icon: Server },
+  { id: 'security', label: '安全', icon: Shield },
+  { id: 'messaging', label: '消息队列', icon: MessageSquare },
+  { id: 'remote', label: '远程调用', icon: LinkIcon },
+  { id: 'lifecycle', label: '生命周期', icon: Clock },
+  { id: 'plugin', label: '插件系统', icon: Puzzle },
+  { id: 'config', label: '配置管理', icon: Settings },
 ]
 
 export default function ApiPage() {
@@ -39,7 +47,7 @@ export default function ApiPage() {
             API<span className="gradient-text">文档</span>
           </h1>
           <p className="text-xl text-pancake-light/70 max-w-2xl">
-            完整的装饰器、ORM 和 AI 模块 API 参考
+            完整的装饰器、ORM、Web 模块、AI 模块、Redis、安全、消息队列、远程调用、生命周期、插件系统与配置管理 API 参考
           </p>
         </div>
       </section>
